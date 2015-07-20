@@ -1,0 +1,94 @@
+<resources>
+
+    <style name="AppThemeLight" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionBarItemBackground">@color/primary</item>
+        <item name="android:actionBarDivider">@color/primary_dark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:textColor">@color/black_dark</item>
+        <item name="android:textColorHint">@color/black_light</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="android:actionBarTabStyle">@android:color/white</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Customtitletheme</item>
+        <item name="actionModeBackground">@color/primary</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/orange_500</item>
+        <item name="colorControlHighlight">@color/orange_500</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionBarItemBackground">@color/primary</item>
+        <item name="android:actionBarDivider">@color/primary_dark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="android:actionBarTabStyle">@android:color/white</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Customtitletheme</item>
+        <item name="actionModeBackground">@color/primary</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="ActionBar.Solid.Customtitletheme" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/primary</item>
+        <item name="android:background">@color/primary</item>
+        <item name="backgroundStacked">@color/primary</item>
+        <item name="elevation">4dp</item>
+        <item name="backgroundSplit">@color/primary</item>
+        <item name="subtitleTextStyle">@style/Base.TextAppearance.AppCompat.Small</item>
+        <item name="titleTextStyle">@style/ActionBar.CustomTitle</item>
+    </style>
+
+    <style name="MyApp.TitleTextStyle" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyApp.SubtitleTextStyle" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ActionBar.CustomTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white</item>
+    </style>
+
+    <!-- Notification bar actions -->
+    <style name="NotificationAction">
+        <item name="android:layout_width">@dimen/notification_action_width</item>
+        <item name="android:layout_height">@dimen/notification_action_height</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/notification_action_padding</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="NotificationAction.Previous" parent="@style/NotificationAction">
+        <item name="android:src">@drawable/ic_skip_previous_white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="NotificationAction.Play" parent="@style/NotificationAction">
+        <item name="android:src">@drawable/play_light</item>
+    </style>
+
+    <style name="NotificationAction.Next" parent="@style/NotificationAction">
+        <item name="android:src">@drawable/play_light</item>
+    </style>
+
+    <style name="NotificationAction.Collapse" parent="@style/NotificationAction">
+        <item name="android:src">@drawable/ic_close</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

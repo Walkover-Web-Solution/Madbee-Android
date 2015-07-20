@@ -1,0 +1,75 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/facebook_layout_label"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Mobile Number"
+                android:textColor="@color/blue_600"/>
+
+            <com.madbeeapp.android.Views.ExtendedEditText
+                android:id="@+id/countryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/facebook_layout_label"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary"/>
+
+            <EditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook_layout_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/countryCode"
+                android:layout_toRightOf="@+id/countryCode"
+                android:digits="0123456789"
+                android:gravity="center|start"
+                android:inputType="number"
+                android:maxLength="12"
+                android:numeric="integer"
+                android:padding="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/primary"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/verifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/orange_400"
+            android:text="Verify"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.2.10'
+    }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 4
+        targetSdkVersion 22
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.1.1'
+}

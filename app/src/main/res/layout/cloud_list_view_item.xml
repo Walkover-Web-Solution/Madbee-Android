@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeightLarge"
+                android:background="#F4F4F4">
+
+    <TextView
+        android:id="@+id/listViewRightSubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="0:00"
+        android:textColor="@color/black_light"
+        android:textSize="14sp"/>
+
+    <FrameLayout
+        android:id="@+id/listViewLeftIconFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/listViewLeftIcon"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:padding="8dp"
+            android:src="@drawable/empty_art_padding"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/listViewTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/listViewRightSubText"
+        android:layout_toRightOf="@+id/listViewLeftIconFrame"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/listViewTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:fadingEdge="horizontal"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="Song Name"
+                android:textColor="@color/black_dark"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listViewSubTextParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/listViewSubText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:fadingEdge="horizontal"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="Artist Name"
+                android:textColor="@color/black_light"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

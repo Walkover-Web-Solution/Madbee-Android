@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/now_playing_controls_background_light"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:text="@string/social_header"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/accent_material_light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/facebook_layout_label"
+            style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Mobile Number"
+            android:textColor="@color/blue_600"/>
+
+        <TextView
+            android:id="@+id/countryCodePrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/facebook_layout_label"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="+"
+            android:textColor="@color/accent_material_light"/>
+
+        <EditText
+            android:id="@+id/countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebook_layout_label"
+            android:layout_toRightOf="@+id/countryCodePrefix"
+            android:gravity="center"
+            android:hint="1"
+            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/accent_material_light"
+            android:textColorHint="@color/accent_material_dark"/>
+
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebook_layout_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/countryCode"
+            android:layout_toRightOf="@+id/countryCode"
+            android:digits="0123456789"
+            android:gravity="center|start"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:numeric="integer"
+            android:padding="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/accent_material_light"
+            android:textColorHint="@color/accent_material_dark"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/orange_400"
+        android:text="Verify"
+        android:textColor="@color/white"/>
+</LinearLayout>

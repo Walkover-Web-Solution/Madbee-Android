@@ -1,0 +1,7 @@
+<manifest
+    package="com.squareup.picasso"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="2.3.2">
+
+</manifest>

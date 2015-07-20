@@ -1,0 +1,6 @@
+include ':pagerSlidingTabStrip', ':discreteSeekBar'
+include ':picasso'
+include ':dragsortlistviewlibrary'
+include ':velocityviewpagerlibrary'
+include ':viewpagerindicatorlibrary'
+include ':app'

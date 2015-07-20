@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+}
+
+dependencies {
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile files('libs/annotations-12.0.jar')
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+//    compile files('libs/okhttp-2.0.0.jar')
+//    compile files('libs/okhttp-urlconnection-1.6.0.jar')
+    compile files('libs/okio-1.0.0.jar')
+}

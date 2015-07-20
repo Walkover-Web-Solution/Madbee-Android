@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/file_folder_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/music_folder_select_checkbox"/>
+
+    <CheckBox
+        android:id="@+id/music_folder_select_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/file_folder_icon"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/file_folder_title_multiselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:fadingEdge="horizontal"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="File Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25">
+
+            <TextView
+                android:id="@+id/file_folder_size_multiselect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:fadingEdge="horizontal"
+                android:gravity="top"
+                android:text="37 items"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/now_playing_controls_background_light">
+
+    <TextView
+        android:id="@+id/welcome_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/primary"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/welcome_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_header"
+        android:layout_below="@+id/welcome_header"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/ready_to_scan_instructions"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_dark"/>
+
+    <TextView
+        android:id="@+id/swipe_left_to_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_text_1"
+        android:layout_below="@+id/welcome_text_1"
+        android:layout_marginTop="20dp"
+        android:text="@string/swipe_left_to_continue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green_800"/>
+
+</RelativeLayout>

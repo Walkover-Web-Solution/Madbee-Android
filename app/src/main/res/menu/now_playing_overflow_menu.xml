@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/equalizer"
+        android:title="@string/equalizer"/>
+
+    <item
+        android:id="@+id/a_b_repeat"
+        android:title="@string/a_b_repeat"/>
+
+    <item
+        android:id="@+id/save_clear_current_position"
+        android:title="@string/save_current_position"/>
+
+</menu>

@@ -1,0 +1,56 @@
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+build
+gradle
+master.iml
+madbee.iml
+gradlew.bat
+gradlew
+.navigation
+pagerSlidingTabStrip/project.properties
+pagerSlidingTabStrip/gradle.properties
+picasso/pom.xml
+app/build
+discreteSeekBar/build
+dragsortlistviewlibrary/build
+viewpagerindicatorlibrary/build
+velocityviewpagerlibrary/build
+velocityviewpagerlibrary/velocityviewpagerlibrary.iml
+viewpagerindicatorlibrary/viewpagerindicatorlibrary.iml
+dragsortlistviewlibrary/lint.xml
+dragsortlistviewlibrary/dragsortlistviewlibrary.iml
+discreteSeekBar/discreteSeekBar.iml
+app/proguard-project.txt
+app/lint.xml
+app/app-release.apk

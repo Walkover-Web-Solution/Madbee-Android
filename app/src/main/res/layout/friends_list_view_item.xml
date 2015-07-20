@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:background="#F4F4F4">
+
+    <ImageView
+        android:id="@+id/listViewLeftIcon"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:padding="4dp"
+        android:src="@drawable/empty_art_padding"/>
+
+    <LinearLayout
+        android:id="@+id/listViewTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/listViewLeftIcon"
+        android:layout_toRightOf="@+id/listViewLeftIcon"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/listViewTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fadingEdge="horizontal"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="Song Name"
+            android:textColor="@color/black_dark"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/listViewSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="top"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Send Invitation"
+            android:textColor="@color/primary"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

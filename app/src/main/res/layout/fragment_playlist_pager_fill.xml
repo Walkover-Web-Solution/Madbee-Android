@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/coverArt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="centerCrop"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomDarkPatch"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000"/>
+
+    <LinearLayout
+        android:id="@+id/songInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/song_info_gradient"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Unknown Song Title"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/artistAlbumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Unknown Artist - Unknown Album"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

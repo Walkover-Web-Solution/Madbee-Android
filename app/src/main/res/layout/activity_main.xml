@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_activity_drawer_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main activity layout -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.sothree.slidinguppanel.SlidingUpPanelLayout
+                android:id="@+id/sliding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                app:umanoDragView="@+id/nowPlayingRootContainer"
+                app:umanoInitialState="hidden"
+                app:umanoOverlay="false"
+                app:umanoPanelHeight="?actionBarSize"
+                app:umanoParalaxOffset="?actionBarSize"
+                app:umanoShadowHeight="4dp">
+
+                <!-- MAIN CONTENT -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/main_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/primary"
+                        android:elevation="4dp"
+                        android:theme="@style/ActionBar.Solid.Customtitletheme"/>
+
+                    <com.astuetz.PagerSlidingTabStrip
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/main_toolbar"
+                        android:background="@color/primary"
+                        android:elevation="4dp"
+                        app:pstsActivateTextColor="@color/white"
+                        app:pstsDeactivateTextColor="@color/white"
+                        app:pstsDividerColor="@color/transparent"
+                        app:pstsIndicatorColor="@color/white"
+                        app:pstsIndicatorHeight="2dp"
+                        app:pstsShouldExpand="false"
+                        app:pstsTextAllCaps="true"
+                        app:pstsUnderlineColor="@color/transparent_white"
+                        app:pstsUnderlineHeight="0dp"/>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tabs"
+                        android:background="#F4F4F4"
+                        tools:context=".MainActivity"/>
+                </RelativeLayout>
+
+                <!-- SLIDING LAYOUT -->
+                <FrameLayout
+                    android:id="@+id/dragView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/panel_expand_view"/>
+
+                </FrameLayout>
+            </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        </FrameLayout>
+        <!-- DRAWER LAYOUT -->
+        <RelativeLayout
+            android:id="@+id/nav_drawer_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"/>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

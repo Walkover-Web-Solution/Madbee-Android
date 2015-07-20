@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@android:id/text1"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="16dp"
+        android:text="Add to playlist"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/new_playlist_layout"
+        android:layout_below="@android:id/text1"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/new_playlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/new_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:hint="Create new playlist."
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:padding="16dp"
+            android:textColor="@color/black_dark"
+            android:textColorHint="@color/black_light"/>
+
+        <ImageButton
+            android:id="@+id/create_playlist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:alpha="0.6"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:src="@drawable/ic_playlist_add"/>
+    </LinearLayout>
+</LinearLayout>
